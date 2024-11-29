@@ -1,0 +1,4 @@
+PWM LED - 23
+Voltage - 26
+current - 27
+Relay - 13

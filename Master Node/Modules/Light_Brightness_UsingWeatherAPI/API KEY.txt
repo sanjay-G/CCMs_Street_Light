@@ -1,0 +1,1 @@
+https://api.openweathermap.org/data/2.5/weather?q=COIMBATORE,IN&APPID=9a63a2454dfb132b32a696ece8d00198

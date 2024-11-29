@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "streetlightmoniteringsystem",
+  "private_key_id": "8ad0aaa5077615544ba17b3c2adb04db740e4fdb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBz7s9u6tz2bEN\n9sAbn5ZWFj85LRp7c1HAGJXlLkrgQW6C3MAEmaigDm8ulzmPVPBafnXenSjG9+Ya\nDGyOJ8PCOc/VjBO8HgPlkwKBLhrbGctEYkaXa4g78N3rH+cAqjqxBFVMSX3CLkKI\ny/3H3YHqqoEcH0TCqPBz9rTe6U9xrIG6jJXWFucBQ0TDXtSKqZLX0q8dVlV7JUQs\nDqWklLu3rCCnIEq12imMSCy1HyoH0ieavajg1z2ANt4t/GNF0ttAnjNUiEwb+zii\naSHN/aPuABWxR9Ot9XSr2LbcpKpWwkHAcpj2OPugAywJsxipwvE+AqPfOCZ3Hg62\nrDvve90XAgMBAAECggEAAd8SA8Quh6CjR2s86tQqDQxYV+9jjhJmLuCnfqsC9hKS\nEP/PETxNyh3ZkC2abkcRR9s1ib/vh0KyUHx5bKkqbrmrYN7iLrLR5TZiLWhW9T6h\ntwTr5/jJCMS7bJ9f1gkB80U2pAhU1CDDBU2GI2PnWTvqoaB7qki1tnW8KvRw9YjP\nxR1eYqWeq1uUgMKLgEYpz0zRBUVHNORGaqZrrpb/oZ1i2p44/iQsKfAfNWm8XgI8\n5Lm2dkLYW1u0TkkoM70Bclxgq2FXAUATQ0L1J9fi0zJXf10Tqgpl75O1t/rGNwZn\nUg7vNXw2xzwVEDFWav/QkTP3bqlAWIkfMj5hxm2eQQKBgQDtxUgbODvY9b5svxOJ\nxOyN4Xjc8/Wo3ymjwPYfXm9aDd7xr1YHG6NzR9G0JNXGhjjZ+C/UeIZ+bb93RQux\nHVVEIz3eMiIGFZ70QnaAQZJ9ZUUwHuLJtxa9idYV4lyWTYcjFECRDeuL6j09StPB\nvG1DeHNQoAccF84JANeGQxiZqQKBgQDQq6n7GIN2glsmhiK7Ot7OUn87y5AOcSX6\n00sKO//pWCfv2zKiSC9Ofu0bYZ+6WGnZOFD9hTzqhQK0GjBq6yhRJBT+LERMGNtA\nHLP/47QvUeLoxADHpr5cXJIf+HbEBCBHlpH2la8RwOoPUnPONt5uQAD9Y89hCE6D\nN0vNS4p4vwKBgQC6p7zLYYHZ+FDdHcNAzA7H8tDm471eLJKLsteEGKZhk7IJGRP3\n0IKn5SGCwcfwaT4IHwWtTlCGv7Em+FUNXXGqY+AVplV/YUm/hs1wMgnF1tJRzG1M\n3SZE9QfTdjgo5gPITgXB2aOn2uLoUu2ZkUpVRSGBkZ8DNszP1JFdHR8awQKBgDDP\nlulXaJj2ESBHzCQDt06H2Z9BFKdsLDgp6KmyM0CAEId4vLVdMUOpSQlYoqZSPCBF\nnhxPaFprVqCOZ7j63OluCUMTU76BKfgrPqeiuek/vFY6UvxgsrKkLMIxuoZLeMmG\nHQqTJOqAN7/xx4j7KLidXB3plP7blJH5A1A4VWG9AoGAXpqPQuHaGWxrNRErM18G\nmN+IGhp2oKazpbub9oPtSGKvi/+AERrHfTu8hJmUvcWEADvMHdIiapTJ6XpyyKW0\nZNjB2KEAUcQFs5AtHRqn6InmJH0yTUYHu3N1c9H3nN0atIKaZVcpS0SFj6iWNBIO\nCQ9Xv9sW2pGb1iig7lXNMrg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "streetlightmonieringsystem@streetlightmoniteringsystem.iam.gserviceaccount.com",
+  "client_id": "110076253459185378375",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/streetlightmonieringsystem%40streetlightmoniteringsystem.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
