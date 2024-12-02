@@ -9,7 +9,7 @@
 #define   MESH_PORT        5555
 painlessMesh  mesh;
 Scheduler userScheduler; // to control your personal task
-int ThisNodeID = 2;
+int ThisNodeID = 1;
 
 struct dataReceived 
 {
@@ -24,7 +24,7 @@ struct dataReceived
 dataReceived MeshData = {0,"0","0","ON",0,0,0};
 String LightOnOffVerify = "ON";
 unsigned long lastRequestTime = 0; // Tracks the last time a request was processed
-const unsigned long resetInterval = 1000; 
+const unsigned long resetInterval = 500; 
 
 void setup() {
   Serial.begin(115200);
@@ -50,6 +50,7 @@ void loop() {
  if (MeshData.GatewayRequest ==ThisNodeID && millis() - lastRequestTime > resetInterval ){
    SendMessage(broadcastData (ThisNodeID, String(Voltage()),String(Current())));
    lastRequestTime = millis();
+   MeshData.GatewayRequest = 0;
    }
 
 LightOnOff(LightOnOffVerify); //ON/OFF
