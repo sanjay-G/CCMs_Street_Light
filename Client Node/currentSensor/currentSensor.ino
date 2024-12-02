@@ -1,5 +1,5 @@
 
-const int currentPin = 26;
+const int currentPin = 27;
 int sensitivity = 66;
 int adcValue= 0;
 int offsetVoltage = 2500;
