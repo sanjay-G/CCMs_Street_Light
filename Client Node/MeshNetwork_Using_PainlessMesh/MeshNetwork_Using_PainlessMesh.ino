@@ -13,10 +13,15 @@ struct dataReceived
   int NodeNumber;
   String VoltageData;
   String CurrentData;
-  int  OnOffData;
+  String  OnOffData;
+  int LightOnOffNode;
+  int GatewayRequest;
+  int brightnessData;
 };
 
-dataReceived MeshData = {0,"0","0",0};
+dataReceived MeshData = {0,"0","0","ON",0,0,0};
+
+String LightOnOffVerify = "ON";
 
 void setup() {
   Serial.begin(115200);
@@ -27,10 +32,20 @@ void setup() {
 }
 
 void loop() {
- 
+
  mesh.update();
- SendMessage(broadcastData (ThisNodeID,"5.5","0.125"));
- Serial.println(MeshData.CurrentData);
+ if(MeshData.LightOnOffNode == ThisNodeID && MeshData.OnOffData == "ON" )  //checking weather the command for This node else this loop will ignore the command
+ {
+   LightOnOffVerify = "ON";
+ }
+
+ while (MeshData.GatewayRequest ==1)
+ {
+   SendMessage(broadcastData (ThisNodeID,"5.5","0.125"));
+ }
+
+ Serial.println(MeshData.brightnessData);
+ Serial.println(MeshData.LightOnOffNode);
 
 }
 
@@ -61,11 +76,17 @@ void receivedCallback( uint32_t from, String &msg ) {
   int node = myObject["Node"];
   String voltage = myObject["Volatge"];
   String current = myObject["Current"];
-  int lightOnOffCommand = myObject["LightStatus"];
+  String lightOnOffCommand = myObject["LightStatus"];
+  int lightOnOffNode = myObject["LightOnOffNode"];
+  int RequestFromMaster = myObject["RequestNode"];
+  int LightBrightness = myObject["BrigthnessPercentage"];
   MeshData.NodeNumber = node;
   MeshData.VoltageData =  voltage;
   MeshData.CurrentData =  current;
   MeshData.OnOffData =  lightOnOffCommand;
+  MeshData.LightOnOffNode =  lightOnOffNode;
+  MeshData.GatewayRequest =  RequestFromMaster;
+  MeshData.brightnessData =  LightBrightness;
 }
 
 void newConnectionCallback(uint32_t nodeId) {
