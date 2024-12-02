@@ -6,7 +6,7 @@
 
 Scheduler userScheduler; // to control your personal task
 painlessMesh  mesh;
-int ThisNodeID = 1;
+int ThisNodeID = 2;
 
 struct dataReceived 
 {
@@ -29,17 +29,17 @@ void setup() {
 void loop() {
  
  mesh.update();
- broadcastData (ThisNodeID,"5.25","0.150");
- Serial.println(MeshData.OnOffData);
+ SendMessage(broadcastData (ThisNodeID,"5.5","0.125"));
+ Serial.println(MeshData.CurrentData);
 
 }
 
 
-String broadcastData (int NodeID,String Volt,String Amps) {  //Format for sending the data to broadcast
+String broadcastData (int NodeID,String Volt,String mAmps) {  //Format for sending the data to broadcast
   JSONVar jsonReadings;
   jsonReadings["Node"] = ThisNodeID;
   jsonReadings["Volatge"] = Volt;
-  jsonReadings["Current"] = Amps;
+  jsonReadings["Current"] = mAmps;
   String readings = JSON.stringify(jsonReadings);
   return readings;
 }
